@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import 'Form.css';
+import '../components/Form.css';
 
 function Form({setTodos,todos}){
   const initState={

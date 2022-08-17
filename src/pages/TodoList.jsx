@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Layout from '../components/layout/Layout'
-import List from '../components/list/List'
-import Form from '../components/form/Form'
-import Header from '../components/header/Header'
+import Layout from '../components/Layout'
+import List from '../components/List'
+import Form from '../components/Form'
+import Header from '../components/Header'
 
 function TodoList(){
     const [todos,setTodos]=useState([
