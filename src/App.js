@@ -1,41 +1,9 @@
-import { useState } from "react";
-import "./App.css";
+import React from "react";
+
+import TodoList from "./pages/TodoList";
 
 function App() {
-  const [title, setTitle] = useState("");
-  const [todos, setTodos] = useState([
-    {
-      id: 1,
-      title: "react를 배워봅시다.",
-    },
-  ]);
-  return (
-    <div className="container">
-      <input
-        type="text"
-        value={title}
-        onChange={(event) => {
-          setTitle(event.target.value);
-        }}
-      />
-      <button
-        onClick={() => {
-          setTodos([...todos, { id: todos.length + 1, title: title }]);
-        }}
-      >
-        추가하기
-      </button>
-
-      <h1>Todo List</h1>
-      <div className="todos-container">
-        {todos.map((todo) => (
-          <div className="todo" key={todo.id}>
-            {todo.title}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  return <TodoList/>;
 }
 
 export default App;
